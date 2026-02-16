@@ -1,9 +1,23 @@
 :root{
     --primary-color:#4F39F6;
 }
-*,a{
+a{
     color: #6d6969;
 }
 .focusBlue{
     color: var(--primary-color);
+}
+.btnprimary{
+    background-color: var(--primary-color);
+}
+
+.banner{
+    background-image: url(/assets/banner-image.png);
+    height: 400px;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+.banner-content{
+    height: 100%;
+    background-color: rgba(0,0,0,0.25);
 }
