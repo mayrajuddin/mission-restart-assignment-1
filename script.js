@@ -4,7 +4,7 @@ const productsUrl = "https://fakestoreapi.com/products"
     .then (res => res.json())
     .then (data => getProducts(data))
 const getProducts = (products)=>{
-  console.log(products);
+  // console.log(products);
     const ProductsLists= document.getElementById('products')
 
     products.forEach(product => {
@@ -24,7 +24,7 @@ const getProducts = (products)=>{
                 <div class="text-xs md:text-sm">
                   <i class="fa-solid fa-star text-yellow-500 text-xs md:text-sm"></i>
                   <span>${rating.rate}</span>
-                  (<span>${rating.count}</span>)
+                  <span>(${rating.count})</span>
                 </div>
               </div>
               <p class="text-sm md:text-base">
