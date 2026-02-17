@@ -10,9 +10,6 @@
 
 .banner{
     background-image: url(/assets/banner-image.png);
-    height: 400px;
-    /* background-repeat: no-repeat; */
-    background-size: cover;
 }
 .banner-content{
     height: 100%;

@@ -18,8 +18,23 @@
   </head>
   <body>
     <header class="bg-base-100 shadow-sm">
-      <div class="navbar md:container md:mx-auto">
+      <div class="navbar container mx-auto">
         <div class="navbar-start">
+          <a class="text-xl">SwiftCart</a>
+        </div>
+        <div class="navbar-center hidden lg:flex lg-nav">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="focusBlue">Home</a></li>
+            <li><a>Product</a></li>
+            <li><a>Contact</a></li>
+            <li><a>About</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end pr-3 md:pr-0">
+          <a class="cursor-pointer"
+            ><i class="fa-solid fa-cart-shopping"></i>
+            <!-- <div class="badge badge-sm">+99</div> -->
+          </a>
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg
@@ -39,7 +54,7 @@
             </div>
             <ul
               tabindex="-1"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow base-300"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow base-300 mr-8"
             >
               <li><a>Home</a></li>
               <li>
@@ -49,56 +64,43 @@
               <li><a>Contact</a></li>
             </ul>
           </div>
-          <a class="text-xl">SwiftCart</a>
-        </div>
-        <div class="navbar-center hidden lg:flex lg-nav">
-          <ul class="menu menu-horizontal px-1">
-            <li><a class="focusBlue">Home</a></li>
-            <li><a>Product</a></li>
-            <li><a>Contact</a></li>
-            <li><a>About</a></li>
-          </ul>
-        </div>
-        <div class="navbar-end">
-          <a class="cursor-pointer"
-            ><i class="fa-solid fa-cart-shopping"></i>
-            <!-- <div class="badge badge-sm">+99</div> -->
-          </a>
         </div>
       </div>
     </header>
     <!-- Banner section -->
-    <div class="banner">
+    <div class="banner h-64 md:h-[400px] bg-cover">
       <div class="banner-content">
-        <div
-          class="md:container md:mx-auto h-full mx-auto flex flex-col justify-center gap-2"
-        >
-          <h4 class="text-white text-4xl">Best collection for you</h4>
-          <p class="text-gray-100">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla,
-            enim.
-          </p>
-          <div>
-            <button
-              class="btn btn-md btnprimary text-white border-none outline-none shadow-none"
-              href=""
-            >
-              Shop now
-            </button>
+        <div class="container mx-auto h-full">
+          <div class="px-4 h-full mx-auto flex flex-col justify-center gap-2">
+            <h4 class="text-white text-lg md:text-4xl">
+              Best collection for you
+            </h4>
+            <p class="text-gray-100 text-sm md:text-lg">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla,
+              enim.
+            </p>
+            <div class="">
+              <button
+                class="btn btn-md btnprimary text-white border-none outline-none shadow-none"
+                href=""
+              >
+                Shop now
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Features sections -->
-    <section class="feature bg-zinc-100 py-12">
-      <div class="md:container md:mx-auto">
-        <div class="f-heading text-center pb-8">
-          <h4 class="text-xl">Why Choose us</h4>
-          <p class="text-lg">
+    <section class="feature bg-zinc-100 py-6 md:py-12">
+      <div class="md:container md:mx-auto mx-4">
+        <div class="f-heading text-center pb-4 md:pb-8 capitalize">
+          <h4 class="text-lg md:text-xl">Why Choose us</h4>
+          <p class="text-sm md:text-lg">
             we provide the best shopping experience with top-notch service
           </p>
         </div>
-        <div class="flex gap-3">
+        <div class="flex flex-col md:flex-row gap-y-6 md:gap-y-0 md:gap-3 capitalize">
           <div class="card bg-white text-gray-200 p-4">
             <h5 class="text-xl text-gray-600 pb-2 pt-6">Fast Delivery</h5>
             <p class="text-sm text-gray-600">
@@ -112,13 +114,13 @@
             </p>
           </div>
           <div class="card bg-white text-gray-200 p-4">
-            <h5 class="text-xl text-gray-600 pb-2 pt-6">Fast Delivery</h5>
+            <h5 class="text-xl text-gray-600 pb-2 pt-6">secure payment</h5>
             <p class="text-sm text-gray-600">
               Get your orders delivered to your doorstep quickly and efficiently
             </p>
           </div>
           <div class="card bg-white text-gray-200 p-4">
-            <h5 class="text-xl text-gray-600 pb-2 pt-6">Fast Delivery</h5>
+            <h5 class="text-xl text-gray-600 pb-2 pt-6">easy return</h5>
             <p class="text-sm text-gray-600">
               Get your orders delivered to your doorstep quickly and efficiently
             </p>
@@ -126,20 +128,59 @@
         </div>
       </div>
     </section>
+    <!-- tranding pruduct -->
+    <section class="py-8">
+      <div class="mx-4  md:container md:mx-auto">
+        <h2 class="heading capitalize text-2xl font-bold mb-4 md:pb-4">tranding now</h2>
+        <div class="flex flex-col justify-center gap-4">
+          <div class="card bg-base-100  md:w-96 shadow-sm">
+            <figure class="h-60">
+              <img
+                src="assets/sweater.jfif"
+                class="h-full w-full object-cover"
+              />
+            </figure>
+            <div class="card-body">
+              <div class="flex justify-between capitalize ">
+                <div class="badge badge-soft focusBlue text-xs md:text-sm ">mens clothing</div>
+                <div class="text-xs md:text-sm">
+                  <i class="fa-solid fa-star text-yellow-500 text-xs md:text-sm"></i>
+                  3.8
+                </div>
+              </div>
+              <p class="text-sm md:text-base">
+                A card component has a figure, a body part, and inside body
+                there are title and actions parts
+              </p>
+              <div class="card-actions text-sm capitalize">
+                <button class="btn flex-1">
+                  <i class="fa-regular fa-eye"></i>
+                  details
+                </button>
+                <button class="btn btnprimary text-white flex-1">
+                  <i class="fa-solid fa-cart-shopping"></i> Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
     <!-- Footer Section -->
     <footer
-      class="footer sm:footer-horizontal text-white/50 p-10 grid-cols-4 capitalize gap-3"
+      class="footer text-white/50 p-10 md:grid-cols-4 capitalize gap-3"
     >
       <div>
-        <h4 class="focusBlue text-xl font-bold">SwiftCart</h4>
-        <p class="text-sm">
+        <h4 class="focusBlue text-2xl md:text-4xl font-bold">SwiftCart</h4>
+        <p class="text-xs md:text-sm">
           your one-stop shop for your all fashion and lifestyle needs.quality
           product, fast delivery and excellent support.
         </p>
       </div>
       <nav>
         <h6 class="footer-title">quick link</h6>
-        <a class="link no-underline text-white/50">Home</a>
+        <a class="link no-underline text-white/50" href="index.html">Home</a>
         <a class="link no-underline text-white/50">product</a>
         <a class="link no-underline text-white/50">About</a>
         <a class="link no-underline text-white/50">Contact</a>
@@ -172,7 +213,7 @@
       </div>
     </footer>
     <footer
-      class="footer flex justify-between text-white/50 border-gray-600 border-t px-10 py-4 items-center"
+      class="footer flex  flex-col md:flex-row md:justify-between text-white/50 border-gray-600 border-t px-10 py-4 items-center"
     >
       <aside class="grid-flow-col">
         <p class="">&copy; 2026 SwiftCart, Inc. All rights reserved.</p>
