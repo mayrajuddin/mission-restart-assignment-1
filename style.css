@@ -1,9 +1,6 @@
 :root{
     --primary-color:#4F39F6;
 }
-a{
-    color: #6d6969;
-}
 .focusBlue{
     color: var(--primary-color);
 }
